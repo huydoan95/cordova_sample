@@ -33,7 +33,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        window.plugins.toast.showLongBottom('Use the back button to return to main.');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -48,5 +47,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-app.initialize();
